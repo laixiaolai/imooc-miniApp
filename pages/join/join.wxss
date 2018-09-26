@@ -1,0 +1,5 @@
+/* pages/join/join.wxss */
+/*页面背景色*/
+page{
+  background:#F3F3F3;
+}

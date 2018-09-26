@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='item-list'>
+  <view class='pro-item' wx:for="{{proList}}" bindtap='toDetail' data-index='{{index}}'>
+    <image class='pro-logo' src='{{item.logo}}'></image>
+    <view class='pro-body'>
+      <view class='pro-title'>{{item.title}}</view>
+      <view class='pro-desc'><text>{{item.desc}}</text></view>
+      <view class='pro-footer'><button class='btn-ask' open-type="contact" size='mini' type='primary'>进入客服会话</button><text class='btn-detail'>查看详情</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<button bindtap='copy'>复制内容</button>
+
+<view class="header_bg">
+  <image src="../../img/3.png" mode="widthFix"></image>
+</view>
+<view class="info_box">
+  <navigator url="../play/play">
+    <image src="../../img/2.jpg" mode="widthFix"></image>
+    <text class="title">围城</text>
+    <text class="tag">华语 动作 枪战</text>
+    <text>主演：刘青云/古天乐/彭于晏</text>
+    <text>导演：陈木胜</text>
+  </navigator>
+</view>
+<view class="h2"><text>热点聚焦</text></view>
+<view class="main1">
+  <view>
+    <image src="../../img/1.jpg" mode="widthFix"></image>
+    <text>斗战胜佛</text>
+  </view>
+  <view>
+    <image src="../../img/1.jpg" mode="widthFix"></image>
+    <text>斗战胜佛2</text>
+  </view>
+  <view>
+    <image src="../../img/1.jpg" mode="widthFix"></image>
+    <text>斗战胜佛3</text>
+  </view>
+</view>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

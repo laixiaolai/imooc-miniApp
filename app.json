@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/join/join",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2E5E86",
+    "navigationBarTitleText": "S.E.E.K",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "selectedColor":"#2E5E86",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"img/bannerdd1.png",
+        "selectedIconPath":"img/bannerdd1.png"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "text": "加入",
+        "iconPath": "img/phone2.png",
+        "selectedIconPath": "img/phone2.png"
+      }
+    ]
+  },
+  "networkTimeout":{
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug":true
+}

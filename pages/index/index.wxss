@@ -1,0 +1,128 @@
+/**index.wxss**/
+swiper{
+  width:100%;
+  height:640rpx;
+}
+swiper image{
+  display: block;
+  width:100%;
+  height:100%;
+}
+/*items-list*/
+.item-list{
+  padding:40rpx 20rpx;
+}
+.pro-item{
+  overflow:hidden;
+  padding-bottom:20rpx;
+}
+.pro-logo{
+  float:left;
+  width:300rpx;
+  height:200rpx;
+}
+.pro-body{
+  margin-left:320rpx;
+}
+.pro-title{
+  color:#333;
+  font-size:34rpx;
+  line-height:1.2;
+}
+.pro-desc{
+  font-size:26rpx;
+  color:#999;
+  height:94rpx;
+  line-height:1.2;
+  overflow:hidden;
+}
+.pro-footer{
+  overflow: hidden;
+  padding-top:10rpx;
+}
+.btn-detail{
+  float:right;
+  font-size:28rpx;
+  line-height:60rpx;
+  color:#000099;
+  margin-right:20rpx;
+}
+.btn-ask{
+  float:right;
+}
+
+.head_bg{
+  width:750rpx;/*或100%*/
+}
+.header_bg image{
+  width:100%;
+}
+.info_box{
+  width:76%;
+  position:absolute;
+  z-index:1;
+  margin-top:-7rem;
+  left:10%;
+  background:#FFF;
+  border-radius:.3rem;
+  padding:2%;
+}
+.info_box image{
+  width:30%;
+  float:left;
+  margin-right:.5rem;
+}
+.info_box text{
+  display:block;
+  font:.75rem/1.3rem 'Microsoft Yahei';
+}
+.info_box .title{
+  font-weight:700;
+  font-size:1.25rem;
+  padding-bottom:.5rem;
+}
+.info_box .tag{
+  color:green;
+}
+.h2{
+  font:bold 1rem/1.8rem 'Microsoft Yahei';
+  text-indent:1rem;
+  background:#F6F6F6;
+  margin:.3rem 0;
+}
+.main1{
+  display:flex;
+  justify-content:space-around;
+}
+.main1 view{
+  width:30%;
+  text-align:center;
+  font:.75rem/1.2rem 'Microsoft Yahei';
+}
+.main1 view image{
+  width:100%;
+}
+
+
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
 	"appid": "wx4b3a09d69df6e044",
-	"projectname": "video",
+	"projectname": "imooc-miniApp",
 	"scripts": {},
 	"condition": {
 		"search": {
